@@ -20,5 +20,5 @@ for line in document:
     else:
         value += line
 
-with open('temp.doc', 'w') as file:
-    json.dump(doc, file)
+with open('temp.txt', 'w', encoding='utf8') as file:
+    json.dump(doc, file, ensure_ascii=False)
